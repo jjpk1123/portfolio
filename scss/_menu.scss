@@ -1,0 +1,39 @@
+//Menu button
+.menu-btn {
+    //Always be on top, and in the upper right corner
+    position: absolute;
+    z-index: 3; //front
+    right: 35px; //small pad
+    top: 35px; //small pad
+    cursor: pointer;
+    @include easeOut; 
+
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #fff;
+        @include easeOut;
+    }
+
+    //Rotate into X with menu lines.
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line{
+            //Selects the nth child, aka the top line
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+
+        }
+    }
+
+}

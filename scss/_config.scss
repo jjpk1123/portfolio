@@ -6,7 +6,7 @@ $background-opacity: 0.8;
 
 //Like a function, to use: "@include easeOut()"
 @mixin easeOut {
-    transition: all 1.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin background {
