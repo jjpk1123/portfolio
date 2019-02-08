@@ -6,7 +6,7 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 
 //Selects it all, like an array
-const navItems = document.querySelectorAll('nav-item');
+const navItems = document.querySelectorAll('.nav-item');
 
 //Set Initial State of the Menu
 let showMenu = false; //"let" allows us to change the value later, const would not.
