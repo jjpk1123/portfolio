@@ -1,6 +1,7 @@
 //Allows us to look at _config.scss without cluttering out main.scss
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 // Select everything with *
 // Make padding not affect height
