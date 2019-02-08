@@ -1,6 +1,78 @@
-$primary-color: #444;
+//Allows us to look at _config.scss without cluttering out main.scss
+@import 'config';
+
+// Select everything with *
+// Make padding not affect height
+* {
+    box-sizing: border-box;
+}
 
 body {
+    @include background;
     background: $primary-color;
     color: #fff; 
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, 
+    Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+// Headings
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+
+    // Means "h1.lg-heading" for example
+    &.lg-heading{
+        font-size: 6rem;
+    }
+
+    &.sm-heading{
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main{
+    padding: 4rem;
+    height: 100%;
+
+    .icons {
+        margin-top: 1rem;
+        a {
+            padding: 0.3rem;
+            
+            //When hovering over an icon
+            // Means a:hover in regular css
+            &:hover{
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home {
+        overflow: hidden;
+        h1 {
+            //Viewport height, 20%, kinda.
+            margin-top: 20vh;
+        }
+    }
 }
