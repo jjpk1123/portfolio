@@ -31,6 +31,15 @@ $background-opacity: 0.8;
     }
 }
 
+// Set text color depending on background color
+@function set-text-color($color){    
+    @if (lightness($color) > 40){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
 //Media query mixins
 // Each will only apply for certain conditions.
 // Use them sort of like a quick if statement???
