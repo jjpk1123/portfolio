@@ -86,7 +86,7 @@ main{
     grid-gap: 30px; //Spacing
     grid-template-areas:  //Exclaiming the grid format
     'bioimage bio bio'
-    'job1 job2 job3';
+    'skills edu contact';
     grid-template-columns: repeat(3, 1fr); //Sizing for each part
 
         
@@ -103,16 +103,16 @@ main{
         font-size: 1.5rem;
     }
 
-    .job-1 {
-        grid-area: job1;
+    .skills {
+        grid-area: skills;
     }
 
-    .job-2 {
-        grid-area: job2;
+    .education {
+        grid-area: edu;
     }
 
-    .job-3 {
-        grid-area: job3;
+    .contact {
+        grid-area: contact;
     }
 
     .job {
