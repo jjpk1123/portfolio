@@ -122,7 +122,7 @@ main{
     }
 }
 
-//Work/projects
+// Work/projects
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -177,6 +177,7 @@ main{
     &:hover{
         background: $secondary-color;
         color: set-text-color($secondary-color);
+        @include easeOut;
     }
 }
 

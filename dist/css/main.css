@@ -212,7 +212,8 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #2b6ec7;
-    color: #000; }
+    color: #000;
+    transition: all 0.5s ease-out; }
 
 .btn-dark {
   background: black;
