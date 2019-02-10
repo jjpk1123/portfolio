@@ -89,8 +89,6 @@ main{
     'skills edu contact';
     grid-template-columns: repeat(3, 1fr); //Sizing for each part
 
-        
-
     .bio-image {
         grid-area: bioimage; //refers to bioimage in .about-info, above.
         margin: auto;
@@ -116,6 +114,29 @@ main{
     }
 
     .job {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+
+//Ray tracer page
+.raytracer-info {
+    display: grid;  //We gon use a grid
+    grid-template-columns: repeat(2, 1fr); //Sizing for each part
+    grid-gap: 0.7rem;
+
+    .img {
+        width: 100%;
+        border: 3px $secondary-color  solid; 
+        
+        &:hover{
+            border-color: #fff;
+            @include easeOut;
+        }
+    }
+
+    .description {
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
