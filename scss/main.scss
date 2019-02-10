@@ -217,9 +217,7 @@ main{
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
+    border-bottom: $secondary-color 40px solid;
 }
 
 //This import is at the bottom, so that is runs after the regular website.

@@ -241,9 +241,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #131313;
-  color: #fff;
-  height: 60px; }
+  border-bottom: #2b6ec7 40px solid; }
 
 @media screen and (min-width: 1171px) {
   .projects {
